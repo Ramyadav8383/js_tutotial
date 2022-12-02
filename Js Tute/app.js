@@ -223,15 +223,20 @@ const text = "some text";
 const number = 10;
 
 // Boolean
-let value = true;
+let value1 = true;
+let value2 = false;
 
 // Null
-
+const result = null;
 // Undefined
+let name;
 
 // symbol(ES6)
 console.log(typeof text);
 // console.log(typeof 10);
 console.log(typeof "hellow world");
 console.log(typeof true);
+console.log(typeof false);
 console.log(typeof number);
+console.log(typeof null);
+console.log(typeof name);
