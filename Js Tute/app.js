@@ -68,7 +68,7 @@
 // let name = "Ram";
 // name = "Harry";
 
-// using const (constant)  -can't Re-assign
+// // using const (constant)   //-can't Re-assign
 // const lastName = "Narayan";
 
 // console.log(value);
@@ -217,26 +217,43 @@
 //typeof- operator (typeof variables) (typeof value)
 
 // string
-const text = "some text";
+// const text = "some text";
 
 // number
-const number = 10;
+// const number = 10;
 
 // Boolean
-let value1 = true;
-let value2 = false;
+// let value1 = true;
+// let value2 = false;
 
 // Null
-const result = null;
+// const result = null;
 // Undefined
-let name;
+// let name;
 
 // symbol(ES6)
-console.log(typeof text);
-// console.log(typeof 10);
-console.log(typeof "hellow world");
-console.log(typeof true);
-console.log(typeof false);
-console.log(typeof number);
-console.log(typeof null);
-console.log(typeof name);
+
+// console.log(typeof text);
+// // console.log(typeof 10);
+// console.log(typeof "hellow world");
+// console.log(typeof true);
+// console.log(typeof false);
+// console.log(typeof number);
+// console.log(typeof null);
+// console.log(typeof name);
+
+// 14_arrays
+// arrays, functions and objects
+// Arrays - [] , 0 index based
+
+// const friends = ["anna", "ram", "john", "pidoori", 45, undefined, null];
+// let bestfriend = friends[3];
+// friends[4] = "ammapidoo";
+
+// console.log(bestfriend);
+// console.log(friends);
+// console.log(friends[4]);
+// console.log(friends[8]);
+
+// 15-functions
+// functions - declare , invoke
