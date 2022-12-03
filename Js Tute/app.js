@@ -257,3 +257,34 @@
 
 // 15-functions
 // functions - declare , invoke
+
+// declaring the function // we can also pass parameters in function name  paranthesis
+// function hello() {
+//   // fuction body
+//   console.log("hello there ram");
+//   console.log("hello there Rohan");
+//   console.log("hello there sukhii");
+// }
+
+// invoking the function
+// hello();
+// // come code here
+
+// hello();
+// // come code here
+
+// hello();
+// // come code here
+
+// 16_ functions parametrs and arguments
+// parameters - when declare / define
+// placeholders , local vars
+// arguments- when ivoke / call /run
+// use vars/values , multiple params , undefined
+
+function greet(name) {}
+// greet  bob
+
+// greet  Anna
+
+// greet  John
