@@ -281,10 +281,42 @@
 // placeholders , local vars
 // arguments- when ivoke / call /run
 // use vars/values , multiple params , undefined
+// const bob = "bob";
+// const anna = "anna";
+// const jhon = "jhon";
 
-function greet(name) {}
-// greet  bob
+// function greet(name) {
+//   console.log("hello there " + name);
+// }
+// // greet  bob
+// greet(bob);
+// // greet  Anna
+// greet(anna);
 
-// greet  Anna
+// // greet  John
+// greet(jhon);
 
-// greet  John
+// 17_fuctions return
+// return
+// default undefined, shortcut, ignores after
+// 1 inch  2.54cm
+
+// const wallheight = 80;
+
+// function calculate(value) {
+//   const newValue = value * 2.54;
+//   return newValue;
+// }
+
+// const width = calculate(100);
+// const height = calculate(wallheight);
+
+// const dimensions = [width, height];
+// console.log(dimensions);
+
+// 18_functions_expressions
+// expressions- another way of defines a  functions
+// create a variable, assign to function (not value) , use var
+// diff - hoisting, use - arrow func , libraries,
+
+// function defination/ declaration
