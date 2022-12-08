@@ -344,22 +344,115 @@
 // objects- key/value pairs methods
 // dot notation
 
-const person = {
-  name: "Ram",
-  lastName: "Yadav",
-  age: 40,
-  education: true,
-  married: false,
-  siblings: ["pido", "cheti"],
-  greeting: function () {
-    console.log("My name is ram");
-  },
-};
+// const person = {
+//   name: "Ram",
+//   lastName: "Yadav",
+//   age: 40,
+//   education: true,
+//   married: false,
+//   siblings: ["pido", "cheti"],
+//   greeting: function () {
+//     console.log("My name is ram");
+//   },
+// };
 
-const age = person.age;
-console.log(age);
-person.name = "harry";
-console.log(person.name);
-console.log(person.siblings[1]);
+// const age = person.age;
+// console.log(age);
+// person.name = "harry";
+// console.log(person.name);
+// console.log(person.siblings[1]);
 
-person.greeting();
+// person.greeting();
+
+// 20_conditional statements
+// > ,<, >=, <=, ===, ==, !=, !===
+
+// const value = 2 > 1;
+// const value2 = 1 > 2;
+
+// const num1 = 6;
+// const num2 = "6";
+
+// const value = num1 != num2;
+// const value2 = num1 !== num2;
+// const value = num1 == num2;
+// const value2 = num1 === num2; // most of the time we use triple equal to oerator
+
+// console.log(value);
+// console.log(value2);
+
+// const result = num1 >= num2;
+// const value = false;
+
+// if (!value) {
+//   console.log("value is false");
+// }
+
+// if (num1 > num2) {
+//   console.log("First number is bigger then second");
+// } else if (result) {
+//   console.log("first number is equal to the second number");
+// } else {
+//   console.log("second number is bigger than first");
+// }
+
+// 21_logical operator
+// (|| - OR), (&& - AND), !
+
+// const name = "bob";
+// const age = 25;
+// // if (name === "bob" || age === 24)
+// if (name === "bob" && age === 26) {
+//   console.log("hello there user");
+// } else {
+//   console.log("false value");
+// }
+
+// switch statement
+// dice values: 1 - 6
+
+// const dice = 2;
+
+// switch (dice) {
+//   case 1:
+//     console.log("you got one");
+//     break;
+//   case 2:
+//     console.log("you got two");
+//     break;
+//   case 3:
+//     console.log("you got three");
+//     break;
+
+//   default:
+//     console.log("you did not roll the dice");
+//     break;
+// }
+
+// using else if
+// if (dice === 1) {
+//   console.log("you got one");
+// } else if (dice === 2) {
+//   console.log("you got two");
+// } else {
+//   console.log("you did not roll the dice");
+// }
+
+// using only if statement
+// if (dice === 1) {
+//   console.log("you got one");
+// }
+// if (dice === 2) {
+//   console.log("you got two");
+// }
+// if (dice === 3) {
+//   console.log("you got three");
+// }
+// if (dice === 4) {
+//   console.log("you got four");
+// }
+// if (dice === 5) {
+//   console.log("you got five");
+// }
+// if (dice < 1 || dice > 6) {
+// console.log("you did not roll the dice");
