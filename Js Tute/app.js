@@ -320,3 +320,46 @@
 // diff - hoisting, use - arrow func , libraries,
 
 // function defination/ declaration
+// function addValue(num1, num2) {
+//   return num1 + num2;
+// }
+
+// const firstValue = addValue(3, 7);
+// const secondValue = addValue(30, 70);
+
+// // function expression
+// const add = function (num1, num2) {
+//   return num1 + num2;
+// };
+
+// const values = [firstValue, secondValue];
+// console.log(values);
+
+// // Arrow function
+// const multiply = (num1, num2) => num1 * num2;
+// // libraries
+// exports.nameOfMethod = function () {};
+
+// 19_objects
+// objects- key/value pairs methods
+// dot notation
+
+const person = {
+  name: "Ram",
+  lastName: "Yadav",
+  age: 40,
+  education: true,
+  married: false,
+  siblings: ["pido", "cheti"],
+  greeting: function () {
+    console.log("My name is ram");
+  },
+};
+
+const age = person.age;
+console.log(age);
+person.name = "harry";
+console.log(person.name);
+console.log(person.siblings[1]);
+
+person.greeting();
