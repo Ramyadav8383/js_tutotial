@@ -456,3 +456,14 @@
 // }
 // if (dice < 1 || dice > 6) {
 // console.log("you did not roll the dice");
+
+// 22_while loop
+// repeatedly run a block of code while condition is true
+// while loop
+
+let amount = 10;
+
+while (amount > 0) {
+  console.log("I have " + amount + " dollars and I'm going to the mall");
+  amount--;
+}
