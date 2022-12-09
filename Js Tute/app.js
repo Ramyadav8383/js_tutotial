@@ -461,9 +461,54 @@
 // repeatedly run a block of code while condition is true
 // while loop
 
-let amount = 10;
+// let amount = 10;
 
-while (amount > 0) {
-  console.log("I have " + amount + " dollars and I'm going to the mall");
-  amount--;
-}
+// while (amount > 0) {
+//   console.log("I have " + amount + " dollars and I'm going to the mall");
+//   amount--;
+// }
+
+// 23_do_while
+// code block first , condition second
+// runs at least once
+
+// let money = 12;
+
+// do {
+//   console.log("you have " + money + " dollars");
+//   money++;
+// } while (money < 10);
+
+//24_for loop
+//for loop
+
+// let i;
+// for (i = 0; i < 10; i++) {
+//   console.log("and the number is: " + i);
+// }
+
+// for (let number = 15; number >= 0; number--) {
+//   console.log("and the number is " + number);
+// }
+
+// 25_string properties and method
+// wrapper string object, don't memorize methods
+
+// let text = ' Ram Narayan Yadav';
+// let result = text.length;
+// console.log(result);
+
+// console.log(text.length);
+// console.log(text.toLocaleLowerCase());
+// console.log(text.toLocaleUpperCase());
+// console.log(text.charAt(2));
+// console.log(text.charAt(text.length - 1));
+// console.log(text.indexOf('a'));
+// console.log(text);
+// console.log(text.trim());
+// console.log(text.startsWith('Ram'));
+// console.log(text.trim().toLowerCase().startsWith('ram'));
+// console.log(text.slice(0, 4));
+// console.log(text.slice(-1));
+
+// 26_tempelate literals
