@@ -511,4 +511,60 @@
 // console.log(text.slice(0, 4));
 // console.log(text.slice(-1));
 
-// 26_tempelate literals
+// 26_tempelate literals - ES6+
+// backtick characters ``
+// interpolation ${} - insert expression (value)
+
+// const name = 'Ram';
+// const age = 25;
+// const sentence = "hey it's " + name + ' and he is ' + age + " years old.";
+
+// const value = `hey it's ${name} and he is  ${age} years old. here is some simple math value is ${ 4+ 4}.`;
+// console.log(value);
+
+// console.log(sentence);
+
+// 27_array_properties
+// array properties and methods
+let names = ['jhon', 'bobo', 'barry', 'olga', 'ben'];
+console.log(names);
+// length
+console.log(names.length);
+console.log(names[names.length - 1]);
+
+// concat
+const lastNames = ['harry', 'uppal', 'karry'];
+const allNames = names.concat(lastNames);
+
+console.log(allNames);
+
+// reverse
+console.log(allNames.reverse());
+
+// unshift 
+// is used to add the items in array
+allNames.unshift('pido');
+allNames.unshift('coco');
+console.log(allNames);
+// shift 
+// method is remove the items from the array
+allNames.shift();
+allNames.shift();
+console.log(allNames);
+
+// push
+allNames.push('jamura');
+allNames.push('kambura');
+allNames.push('nehlu');
+console.log(allNames);
+// pop
+allNames.pop();
+allNames.pop();
+allNames.pop();
+console.log(allNames);
+
+// splice -mutates original array
+
+const specificName = allNames.splice(2, 2);
+console.log(specificName);
+console.log(allNames);
