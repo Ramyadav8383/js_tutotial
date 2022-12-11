@@ -526,45 +526,63 @@
 
 // 27_array_properties
 // array properties and methods
-let names = ['jhon', 'bobo', 'barry', 'olga', 'ben'];
+// let names = ['jhon', 'bobo', 'barry', 'olga', 'ben'];
+// console.log(names);
+// // length
+// console.log(names.length);
+// console.log(names[names.length - 1]);
+
+// // concat
+// const lastNames = ['harry', 'uppal', 'karry'];
+// const allNames = names.concat(lastNames);
+
+// console.log(allNames);
+
+// // reverse
+// console.log(allNames.reverse());
+
+// // unshift
+// // is used to add the items in array
+// allNames.unshift('pido');
+// allNames.unshift('coco');
+// console.log(allNames);
+// // shift
+// // method is remove the items from the array
+// allNames.shift();
+// allNames.shift();
+// console.log(allNames);
+
+// // push
+// allNames.push('jamura');
+// allNames.push('kambura');
+// allNames.push('nehlu');
+// console.log(allNames);
+// // pop
+// allNames.pop();
+// allNames.pop();
+// allNames.pop();
+// console.log(allNames);
+
+// // splice -mutates original array
+
+// const specificName = allNames.splice(2, 2);
+// console.log(specificName);
+// console.log(allNames);
+
+// 28_exercise -full name
+// Arrays and for loop
+
+const names = ['ram', 'shyam', 'geeta', 'sita'];
+const lastName = 'shakeandbake';
+let newArray = [];
+
+// for loop
+for (let i = 0; i < names.length; i++) {
+  console.log(i);
+  console.log(names[i]);
+  const fullName = `${names[i]} ${lastName}`;
+  newArray.push(fullName);
+}
+
 console.log(names);
-// length
-console.log(names.length);
-console.log(names[names.length - 1]);
-
-// concat
-const lastNames = ['harry', 'uppal', 'karry'];
-const allNames = names.concat(lastNames);
-
-console.log(allNames);
-
-// reverse
-console.log(allNames.reverse());
-
-// unshift 
-// is used to add the items in array
-allNames.unshift('pido');
-allNames.unshift('coco');
-console.log(allNames);
-// shift 
-// method is remove the items from the array
-allNames.shift();
-allNames.shift();
-console.log(allNames);
-
-// push
-allNames.push('jamura');
-allNames.push('kambura');
-allNames.push('nehlu');
-console.log(allNames);
-// pop
-allNames.pop();
-allNames.pop();
-allNames.pop();
-console.log(allNames);
-
-// splice -mutates original array
-
-const specificName = allNames.splice(2, 2);
-console.log(specificName);
-console.log(allNames);
+console.log(newArray);
