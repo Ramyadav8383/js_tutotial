@@ -572,17 +572,46 @@
 // 28_exercise -full name
 // Arrays and for loop
 
-const names = ['ram', 'shyam', 'geeta', 'sita'];
-const lastName = 'shakeandbake';
-let newArray = [];
+// const names = ['ram', 'shyam', 'geeta', 'sita'];
+// const lastName = 'shakeandbake';
+// let newArray = [];
 
-// for loop
-for (let i = 0; i < names.length; i++) {
-  console.log(i);
-  console.log(names[i]);
-  const fullName = `${names[i]} ${lastName}`;
-  newArray.push(fullName);
+// // for loop
+// for (let i = 0; i < names.length; i++) {
+//   console.log(i);
+//   console.log(names[i]);
+//   const fullName = `${names[i]} ${lastName}`;
+//   newArray.push(fullName);
+// }
+
+// console.log(names);
+// console.log(newArray);
+
+// 29exercise calculate total
+// function, return, if ,arrays, for loop
+
+const gas = [20, 40, 100];
+const food = [10, 40, 50];
+
+function calculateTotal(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+    // console.log(arr[i]);
+  }
+  if (total > 100) {
+    console.log(`whoa! you are spending way too much`);
+    return total;
+  }
+  console.log(`you are  good total is less than 100`);
+  return total;
 }
+const gasTotal = calculateTotal(gas);
+const foodTotal = calculateTotal(food);
+const randomTotal = calculateTotal([200, 4000, 500, 1]);
 
-console.log(names);
-console.log(newArray);
+console.log({
+  gas:gasTotal,
+  food:foodTotal,
+  random:randomTotal,
+});
