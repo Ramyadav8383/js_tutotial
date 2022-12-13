@@ -590,28 +590,46 @@
 // 29exercise calculate total
 // function, return, if ,arrays, for loop
 
-const gas = [20, 40, 100];
-const food = [10, 40, 50];
+// const gas = [20, 40, 100];
+// const food = [10, 40, 50];
 
-function calculateTotal(arr) {
-  let total = 0;
-  for (let i = 0; i < arr.length; i++) {
-    total += arr[i];
-    // console.log(arr[i]);
-  }
-  if (total > 100) {
-    console.log(`whoa! you are spending way too much`);
-    return total;
-  }
-  console.log(`you are  good total is less than 100`);
-  return total;
-}
-const gasTotal = calculateTotal(gas);
-const foodTotal = calculateTotal(food);
-const randomTotal = calculateTotal([200, 4000, 500, 1]);
+// function calculateTotal(arr) {
+//   let total = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     total += arr[i];
+//     // console.log(arr[i]);
+//   }
+//   if (total > 100) {
+//     console.log(`whoa! you are spending way too much`);
+//     return total;
+//   }
+//   console.log(`you are  good total is less than 100`);
+//   return total;
+// }
+// const gasTotal = calculateTotal(gas);
+// const foodTotal = calculateTotal(food);
+// const randomTotal = calculateTotal([200, 4000, 500, 1]);
 
-console.log({
-  gas:gasTotal,
-  food:foodTotal,
-  random:randomTotal,
-});
+// console.log({
+//   gas:gasTotal,
+//   food:foodTotal,
+//   random:randomTotal,
+// });
+
+// 30_value refrences
+// refrences vs value
+// primitive data types
+// string, number , symbol, boolean, undefined, Null,
+// Arrays, Functions, Objects = object
+// typeof
+
+// when assigning primitive data type value to a variable any changes are made directly to that value, without affecting original value
+
+// when assigning no-primitive data type value to a variable is done by reference so any changes will affect all the references.
+
+const number = 1;
+let number2 = number;
+number2 = 7;
+
+console.log(`the first value is ${number} `);
+console.log(`the second value is ${number2} `);
