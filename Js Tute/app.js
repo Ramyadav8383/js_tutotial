@@ -659,11 +659,31 @@
 
 // 32_truthy falsy
 // "", '', ``, 0, -0 , NaN, false , null, undefined
-const bool1 = true;
-const bool2 = 3 > 2;
-if (bool1) {
-  console.log("hey it works!");
-}
-if (bool2) {
-  console.log("hey it also works!");
-}
+// const bool1 = true;
+// const bool2 = 3 > 2;
+
+// // const text = 'ram chandran';
+// const text = 'ram';
+// if (text) {
+//   console.log("its is truthy");
+// }
+// else {
+//   console.log("hey its falsy");
+// }
+
+// if (bool1) {
+//   console.log("hey it works!");
+// }
+// if (bool2) {
+//   console.log("hey it also works!");
+// }
+
+// 33_unary and ternary operators
+// unary operator - typeof
+let text = 'some text';
+console.log(typeof text); // operand
+// binary operator - assignment
+let number = 3;
+let number2 = 2 + 5;
+// ternary operator
+// condition ? (runs if true) : (runs if false)
