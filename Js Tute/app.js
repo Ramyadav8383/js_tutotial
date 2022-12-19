@@ -732,16 +732,47 @@
 // can not be access from outside the code blocks
 // if - NOT VAR we are not talking about VAR
 
-let name = "ram";
+// let name = "ram";
 
 
-function calculate() {
+// function calculate() {
+//   const name = "ram";
+//   const age = 20;
+//   // console.log(name);
   
-}
-calculate();
+//   becomesGlobal = 'global variable';
+// }
 
-if (true) {
- 
-}
+// calculate();
+// // console.log(age);
+// console.log(becomesGlobal);
 
-console.log(`my name is ${name} and i'm awesome`);
+
+// if (true) {
+//  console.log('harry');
+// }
+// {
+//   const name = "ram";
+//   const special = "spcial";
+// }
+// console.log(special);
+
+// console.log(`my name is ${name} and i'm awesome`);
+
+// 26_variable lookup
+// {} - code block
+
+const globalNumber = 5;
+
+function add(num1, num2) {
+  const globalNumber = 20;
+  const result = num1 + num2 + globalNumber;
+  function multiply() {
+    const globalNumber = 100;
+    const multiplyResult = result * globalNumber;
+    console.log(multiplyResult)
+  }
+  multiply();
+  return result;
+}
+console.log(add(3, 5));
