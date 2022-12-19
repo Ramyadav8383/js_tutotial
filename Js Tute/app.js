@@ -680,10 +680,68 @@
 
 // 33_unary and ternary operators
 // unary operator - typeof
-let text = 'some text';
-console.log(typeof text); // operand
-// binary operator - assignment
-let number = 3;
-let number2 = 2 + 5;
-// ternary operator
-// condition ? (runs if true) : (runs if false)
+// let text = 'some text';
+// console.log(typeof text); // operand
+// // binary operator - assignment
+// let number = 3;
+// let number2 = 2 + 5;
+// // console.log(number2)
+// // ternary operator
+// // condition ? (runs if true) : (runs if false)
+
+// const value = 2 > 1;
+
+// value ? console.log('value is true') : console.log('value is false');
+
+// if (value) {
+//   console.log('value is true');
+// }
+// else {
+//   console.log('value is false');
+// }
+
+// 34_global scope and local scope
+// any variable outside code block {} is said to be in global scope
+// can be access anywhere in the program
+// gotchas : name collisions, modify by mistake
+
+// let name = 'ram';
+// name = 'pido';
+
+// function calculate() {
+//   console.log(name);
+//   name = 'orange';
+//   function inner() {
+//     name = "hey bro";
+//     console.log(`this is from inner function ${name}`);
+//   }
+//   inner();
+// }
+// calculate();
+
+// if (true) {
+//   console.log(name);
+//   name = 'pants';
+// }
+
+
+// console.log(`my name is ${name} and i'm awesome`);
+
+// 35_local scope
+// local scope
+// can not be access from outside the code blocks
+// if - NOT VAR we are not talking about VAR
+
+let name = "ram";
+
+
+function calculate() {
+  
+}
+calculate();
+
+if (true) {
+ 
+}
+
+console.log(`my name is ${name} and i'm awesome`);
