@@ -784,22 +784,22 @@
 // calback function- passed to a another function as an argument and executed inside the function
 
 
-function morning(name) {
-  return `Good Morning ${name.toUpperCase()}`;
-}
-function afternoon(name) {
-  return `Good Afternoon ${name.repeat(3)}`;
-}
 // function morning(name) {
 //   return `Good Morning ${name.toUpperCase()}`;
 // }
-// high order function with call back
-function greet(name, cb) {
-  const myName = "harry";
-  console.log(`${cb(name)} my name is ${myName}`);
-}
-greet("pido" , morning);
-greet("peter", afternoon);
+// function afternoon(name) {
+//   return `Good Afternoon ${name.repeat(3)}`;
+// }
+// // function morning(name) {
+// //   return `Good Morning ${name.toUpperCase()}`;
+// // }
+// // high order function with call back
+// function greet(name, cb) {
+//   const myName = "harry";
+//   console.log(`${cb(name)} my name is ${myName}`);
+// }
+// greet("pido" , morning);
+// greet("peter", afternoon);
 
 
 // function greetMorning(name) {
@@ -812,3 +812,17 @@ greet("peter", afternoon);
 // }
 // greetMorning("pido");
 // greetAfternoon("pido");
+
+// 38_array iterators
+// Powerfull Array Methods
+// forEach, map, filter,find,reduce
+// Iterate over array- no for loop required
+// accept CALLBACK function as an argument, calls callback against each item in a array. Reference Item in the Callback Parameter.
+
+const numbers = [0, 1, 2, 3, 4];
+
+// show all numbers
+
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+}
