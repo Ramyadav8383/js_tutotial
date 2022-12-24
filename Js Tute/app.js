@@ -819,10 +819,75 @@
 // Iterate over array- no for loop required
 // accept CALLBACK function as an argument, calls callback against each item in a array. Reference Item in the Callback Parameter.
 
-const numbers = [0, 1, 2, 3, 4];
+// const numbers = [0, 1, 2, 3, 4];
 
-// show all numbers
+// // show all numbers
 
-for (let i = 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
-}
+// for (let i = 0; i < numbers.length; i++) {
+//   console.log(numbers[i]);
+// }
+
+// 39_forEach
+// it does not return new array
+
+
+// const people = [
+//   { name: 'bob', age: 25, position: 'developer' },
+//   { name: 'harry', age: 20, position: 'designer' },
+//   { name: 'knight', age: 23, position: 'Tester' }
+// ];
+
+// // function seperately
+// function showPerson(person) {
+// console.log(person.position.toUpperCase());
+// }
+
+// // people.forEach(showPerson);
+
+// people.forEach(function (item) {
+//   console.log(item.position
+//   .toUpperCase())
+// })
+
+// 40_map method
+// does return a new array
+// does not change size of original array
+// uses values from original array when making new one
+
+
+// const people = [
+//   { name: 'bob', age: 20, position: 'developer' },
+//   { name: 'harry', age: 25, position: 'Designer' },
+//   { name: 'potter', age: 28, position: 'tester' },
+//   { name: 'pido', age: 22, position: 'boss' },
+// ];
+
+// const ages = people.map(function (person) {
+//   // console.log(person);
+//   // return "hello world";
+//   // return person;
+//   // return person.age + 20;
+//   return person.position;
+// });
+
+// const newPeople = people.map(function (person) {
+//   return {
+//     firstName: person.name.toUpperCase(),
+//     oldAge: person.age + 20,
+//   };
+  
+  
+// });
+
+// const names = people.map(function (person) {
+//   return `<h1>${person.name}</h1>`
+// });
+
+// document.body.innerHTML = names.join('');
+// // console.log(ages)
+// console.log(names);
+
+// 41_filter method
+// does return a new array
+// can manipulate the size of new array
+// return based on condition
