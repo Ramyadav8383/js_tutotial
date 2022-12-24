@@ -891,3 +891,24 @@
 // does return a new array
 // can manipulate the size of new array
 // return based on condition
+
+// const people = [
+//   { name: 'bob', age: 20, position: 'developer' },
+//   { name: 'harry', age: 25, position: 'Designer' },
+//   { name: 'potter', age: 28, position: 'tester' },
+//   { name: 'pido', age: 22, position: 'boss' },
+// ];
+
+// const youngPeople = people.filter(function (person) {
+//   return person.age <= 25;
+  
+// });
+// const developers = people.filter(function (person) {
+//   return person.position === 'graphic designer';
+// });
+// // console.log(youngPeople);
+// console.log(developers);
+
+// 42_find method
+// returns object
+
