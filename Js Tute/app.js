@@ -724,7 +724,6 @@
 //   name = 'pants';
 // }
 
-
 // console.log(`my name is ${name} and i'm awesome`);
 
 // 35_local scope
@@ -734,19 +733,17 @@
 
 // let name = "ram";
 
-
 // function calculate() {
 //   const name = "ram";
 //   const age = 20;
 //   // console.log(name);
-  
+
 //   becomesGlobal = 'global variable';
 // }
 
 // calculate();
 // // console.log(age);
 // console.log(becomesGlobal);
-
 
 // if (true) {
 //  console.log('harry');
@@ -783,7 +780,6 @@
 // Higher Order function- accepts another function as an argument or returns another function as a result
 // calback function- passed to a another function as an argument and executed inside the function
 
-
 // function morning(name) {
 //   return `Good Morning ${name.toUpperCase()}`;
 // }
@@ -800,7 +796,6 @@
 // }
 // greet("pido" , morning);
 // greet("peter", afternoon);
-
 
 // function greetMorning(name) {
 //   const myName = "Ram";
@@ -830,7 +825,6 @@
 // 39_forEach
 // it does not return new array
 
-
 // const people = [
 //   { name: 'bob', age: 25, position: 'developer' },
 //   { name: 'harry', age: 20, position: 'designer' },
@@ -854,7 +848,6 @@
 // does not change size of original array
 // uses values from original array when making new one
 
-
 // const people = [
 //   { name: 'bob', age: 20, position: 'developer' },
 //   { name: 'harry', age: 25, position: 'Designer' },
@@ -875,8 +868,7 @@
 //     firstName: person.name.toUpperCase(),
 //     oldAge: person.age + 20,
 //   };
-  
-  
+
 // });
 
 // const names = people.map(function (person) {
@@ -901,7 +893,7 @@
 
 // const youngPeople = people.filter(function (person) {
 //   return person.age <= 25;
-  
+
 // });
 // const developers = people.filter(function (person) {
 //   return person.position === 'graphic designer';
@@ -910,5 +902,54 @@
 // console.log(developers);
 
 // 42_find method
-// returns object
+// returns single instance -(in this case object)
+// returns first match , if no match undefined
+// great for getting unique value
 
+// const people = [
+//   { name: "bob", age: 20, position: "developer", id: 1 },
+//   { name: "harry", age: 25, position: "Designer", id: 2 },
+//   { name: "potter", age: 28, position: "tester", id: 3 },
+//   { name: "pido", age: 22, position: "boss", id: 4 },
+// ];
+
+// const names = ['bob', 'peter', 'susy','pido'];
+// console.log(
+//   names.find(function (name) {
+//   return name === "pido";
+//   // return name === "zelda";
+//   })
+
+// );
+
+// const person = people.find(function (person) {
+//   return person.id === 3;
+// });
+
+// // console.log(person);
+// console.log(person.name);
+
+// const person2 = people.filter(function (person) {
+//   return person.id === 3;
+// });
+// console.log(person2[0].name);
+
+// 43_reduce method
+// reduce
+// iterates , callback function
+// reduces to a single value - number , array, object
+// 1 parameter ('acc') - total of all calculations
+// 2 parameter ('curr') - current iteration/value
+
+const people = [
+  { name: "bob", age: 20, position: "developer", id: 1, salary: 200 },
+  { name: "harry", age: 25, position: "Designer", id: 2, salary: 300 },
+  { name: "potter", age: 28, position: "tester", id: 3, salary: 500 },
+  { name: "pido", age: 22, position: "boss", id: 4, salary: 500 },
+];
+
+const total = people.reduce(function (acc, currItem) {
+  console.log(acc);
+  console.log(currItem);
+  return acc;
+}, 200);
