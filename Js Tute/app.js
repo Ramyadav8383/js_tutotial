@@ -949,7 +949,10 @@ const people = [
 ];
 
 const total = people.reduce(function (acc, currItem) {
-  console.log(acc);
-  console.log(currItem);
+  console.log(`total ${acc}`);
+  console.log(`current money: ${currItem.salary}`);
+  acc += currItem.salary;
   return acc;
-}, 200);
+}, 500);
+
+console.log(total);
