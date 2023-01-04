@@ -941,18 +941,83 @@
 // 1 parameter ('acc') - total of all calculations
 // 2 parameter ('curr') - current iteration/value
 
-const people = [
-  { name: "bob", age: 20, position: "developer", id: 1, salary: 200 },
-  { name: "harry", age: 25, position: "Designer", id: 2, salary: 300 },
-  { name: "potter", age: 28, position: "tester", id: 3, salary: 500 },
-  { name: "pido", age: 22, position: "boss", id: 4, salary: 500 },
+// const people = [
+//   { name: "bob", age: 20, position: "developer", id: 1, salary: 200 },
+//   { name: "harry", age: 25, position: "Designer", id: 2, salary: 300 },
+//   { name: "potter", age: 28, position: "tester", id: 3, salary: 500 },
+//   { name: "pido", age: 22, position: "boss", id: 4, salary: 500 },
+// ];
+
+// const total = people.reduce(function (acc, currItem) {
+//   console.log(`total ${acc}`);
+//   console.log(`current money: ${currItem.salary}`);
+//   acc += currItem.salary;
+//   return acc;
+// }, 500);
+
+// console.log(total);
+
+// 44_math object
+// standard built-in objects - always available
+// const number = 5.63737;
+// const result = Math.floor(9.56756);
+
+// const number = 5.12222;
+// const result = Math.ceil(number);
+
+// const number = 100;
+// const result = Math.sqrt(number);
+
+// const result = Math.PI;
+// const result = Math.min(4, 6, 8, 9, 10);
+// const result = Math.max(4, 6, 8, 9, 10, 23, 23, 4, 5);
+
+// const result = Math.floor(Math.random() * 10) + 1;
+// console.log(result);
+
+// 45_ date object
+
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "Augest",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
-const total = people.reduce(function (acc, currItem) {
-  console.log(`total ${acc}`);
-  console.log(`current money: ${currItem.salary}`);
-  acc += currItem.salary;
-  return acc;
-}, 500);
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thrusday",
+  "Friday",
+  "Saturday",
+];
 
-console.log(total);
+// const date = new Date();
+const date = new Date("1/12/2020");
+const month = date.getMonth();
+console.log(months[month]);
+// console.log(date);
+
+const day = date.getDay();
+console.log(days[day]);
+
+console.log(date.getDate());
+console.log(date.getFullYear());
+
+const sentence = `${days[day]}, ${date.getDate()} ${
+  months[month]
+} ${date.getFullYear()}`;
+
+console.log(sentence);
+
+document.body.innerHTML = sentence;
