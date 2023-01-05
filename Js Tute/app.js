@@ -977,47 +977,49 @@
 
 // 45_ date object
 
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "Augest",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "Augest",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
 
-const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thrusday",
-  "Friday",
-  "Saturday",
-];
+// const days = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thrusday",
+//   "Friday",
+//   "Saturday",
+// ];
 
-// const date = new Date();
-const date = new Date("1/12/2020");
-const month = date.getMonth();
-console.log(months[month]);
-// console.log(date);
+// // const date = new Date();
+// const date = new Date("1/12/2020");
+// const month = date.getMonth();
+// console.log(months[month]);
+// // console.log(date);
 
-const day = date.getDay();
-console.log(days[day]);
+// const day = date.getDay();
+// console.log(days[day]);
 
-console.log(date.getDate());
-console.log(date.getFullYear());
+// console.log(date.getDate());
+// console.log(date.getFullYear());
 
-const sentence = `${days[day]}, ${date.getDate()} ${
-  months[month]
-} ${date.getFullYear()}`;
+// const sentence = `${days[day]}, ${date.getDate()} ${
+//   months[month]
+// } ${date.getFullYear()}`;
 
-console.log(sentence);
+// console.log(sentence);
 
-document.body.innerHTML = sentence;
+// document.body.innerHTML = sentence;
+
+// DOM (document object model --------------------------------------)
