@@ -1023,3 +1023,60 @@
 // document.body.innerHTML = sentence;
 
 // DOM (document object model --------------------------------------)
+// similar to css
+// select the element or gorup of elements the you we want to affect
+//Decide the effect we want to apply to  the selection
+// many diffrent ways
+// document.body.style.background = "blue";
+// document.body.style.color = "orange";
+// document.getElementById("btn").style.color = "purple";
+
+// // assign to a variable
+// const element = document.getElementById("element");
+
+// // do sometething
+// document.querySelector("element"); // do something;
+
+// window object
+// console.log(window);
+
+// return a node object or a node list which is an arraylike object
+
+// const btn = document.getElementById("btn");
+// const name = btn.nodeName;
+// const css = btn.style;
+
+// const heading = document.getElementById("heading");
+// const name = heading.nodeName;
+// const css = heading.style;
+
+// console.log(heading);
+// console.log(name);
+// console.log(css);
+
+// 47_windows_ document
+// window object = browser api
+// document
+// console.dir
+// alert("hello this is danger");
+// console.log(window);
+// console.log(document);
+// console.dir(document);
+
+// 48_get element by id
+// select the element or group of element the we want
+// decide the effect we want to apply to the selection
+
+// getElementById("element")
+// const h1 = document.getElementById("title");
+// h1.style.color = "green";
+
+// const btn = document.getElementById("btn");
+
+// btn.style.backgroundColor = "blue";
+// btn.style.color = "orange";
+
+// document.getElementById("btn").style.backgroundColor = "orange";
+// document.getElementById("btn").style.color = "purple";
+
+// 49_ get element by tag name
