@@ -1135,3 +1135,66 @@
 
 // querySelector('any css') - select single
 // querySelectorAll('any css') - selects all
+
+// const result = document.querySelector("#result");
+// result.style.backgroundColor = "green";
+
+// const item = document.querySelector(".special");
+// console.log(item);
+
+// const lastItem = document.querySelector("li:last-child");
+// console.log(lastItem);
+
+// const list = document.querySelectorAll(".special");
+// // console.log(list);
+
+// list.forEach(function (item) {
+//   console.log(item);
+//   item.style.color = "yellow";
+// });
+
+// 52_navigate the dom child element
+// // select the element or group of element the we want
+// decide the effect we want to apply to the selection
+
+// childNodes - returns all childNodes including whitespaces which is treated as a text node
+
+// children
+// firstChild
+// lastChild
+
+// const result = document.querySelector("#result");
+// const allChildren = result.childNodes;
+// // console.log(allChildren);
+
+// const children = result.children;
+// console.log(children);
+
+// console.log(result.firstChild);
+// console.log(result.lastChild);
+
+// 53_ navigate the dog parent element
+// parent element
+
+// const heading = document.querySelector("h2");
+// const parent = heading.parentElement;
+// parent.style.color = "green";
+// console.log(parent);
+// console.log(heading.parentElement.parentElement);
+
+// 54_navigating dom with previous sibling and next sibling
+// return whitespaces
+
+// const sibling = document.querySelector("#result");
+// console.log(sibling.children);
+
+// const first = document.querySelector(".first");
+// const second = (first.nextSibling.nextSibling.style.color = "red");
+// console.log(second);
+
+// const last = document.querySelector("#last");
+// const third = (last.previousSibling.previousSibling.style.backgroundColor =
+//   "green");
+// console.log(third);
+
+// second way of navigating dom using next sibling and previous sibling
