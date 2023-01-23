@@ -1198,3 +1198,40 @@
 // console.log(third);
 
 // second way of navigating dom using next sibling and previous sibling
+// const first = document.querySelector(".first");
+// first.nextElementSibling.style.color = "blue";
+// const last = document.querySelector("#last");
+
+// 55_text content Node value
+// node value
+// text content
+
+// const item = document.getElementById("special");
+// // const value = item.nodeValue;
+// const value = item.firstChild.nodeValue;
+// const easyValue = item.textContent;
+// console.log(easyValue);
+// console.log(value);
+
+//56_get set attribute
+// getAttribute();
+// setAttribute();
+
+// const first = document.querySelector(".first");
+// // const classValue = first.getAttribute("class");
+// // const idValue = first.getAttribute("id");
+// // console.log(classValue);
+// // console.log(idValue);
+// const link = document.getElementById("link");
+// const showLink = link.getAttribute("href");
+// console.log(showLink);
+
+// const last = link.nextElementSibling;
+// last.setAttribute("class", "first");
+// last.textContent = "i also have a class of first";
+// console.log(last);
+
+// const links = document.querySelectorAll(".first");
+// console.log(links);
+
+// 57_classList and className
