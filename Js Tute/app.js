@@ -123,9 +123,9 @@
 // dummy = "hey bro";
 // const number2 = 1.456;
 // const number3 = "1.456";
-// basic mathematic operations
-// const add = number + number2;
-// const sub = number - number2;
+// // basic mathematic operations
+// const add = number + number3;
+// const sub = number - number3;
 // const mul = number * number2;
 // const div = number / number2;
 
@@ -1024,7 +1024,7 @@
 
 // DOM (document object model --------------------------------------)
 // similar to css
-// select the element or gorup of elements the you we want to affect
+// select the element or group of elements the you we want to affect
 //Decide the effect we want to apply to  the selection
 // many diffrent ways
 // document.body.style.background = "blue";
@@ -1047,17 +1047,17 @@
 // const css = btn.style;
 
 // const heading = document.getElementById("heading");
-// const name = heading.nodeName;
+// const names = heading.nodeName;
 // const css = heading.style;
 
 // console.log(heading);
-// console.log(name);
+// console.log(names);
 // console.log(css);
 
 // 47_windows_ document
 // window object = browser api
-// document
-// console.dir
+// document;
+// console.dir;
 // alert("hello this is danger");
 // console.log(window);
 // console.log(document);
@@ -1235,3 +1235,15 @@
 // console.log(links);
 
 // 57_classList and className
+// classList
+// className
+
+const first = document.getElementById("first");
+const second = document.getElementById("second");
+const third = document.getElementById("third");
+
+const classValue = first.className;
+// console.log(classValue);
+
+second.className = "colors";
+second.className = "text";
