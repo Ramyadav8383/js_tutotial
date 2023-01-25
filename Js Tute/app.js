@@ -1173,7 +1173,7 @@
 // console.log(result.firstChild);
 // console.log(result.lastChild);
 
-// 53_ navigate the dog parent element
+// 53_ navigate the dom parent element
 // parent element
 
 // const heading = document.querySelector("h2");
@@ -1238,12 +1238,52 @@
 // classList
 // className
 
-const first = document.getElementById("first");
-const second = document.getElementById("second");
-const third = document.getElementById("third");
+// const first = document.getElementById("first");
+// const second = document.getElementById("second");
+// const third = document.getElementById("third");
 
-const classValue = first.className;
+// // const classValue = first.className;
+// // console.log(classValue);
+
+// second.className = "colors text";
+
+// // third.classList.add("colors");
+// // third.classList.add("text");
+// third.classList.add("text", "colors");
+// third.classList.remove("text");
+
+// let results = third.classList.contains("colors");
+// if (results) {
+//   console.log("hello world");
+// } else {
+//   console.log("does not contain the class");
+// }
+
+// const classValue = third.classList;
 // console.log(classValue);
 
-second.className = "colors";
-second.className = "text";
+// 58_createElement, createTextNode, apend child
+// createElement('element')
+// CreateTextNode('text content')
+// element.apendChild(childElement)
+
+const result = document.querySelector("#result");
+
+// create empty element
+const bodyDiv = document.createElement("div");
+
+// create text node
+const text = document.createTextNode("a simple body div");
+bodyDiv.appendChild(text);
+document.body.appendChild(bodyDiv);
+
+const heading = document.createElement("h2");
+const headingText = document.createTextNode("dynamic heading");
+heading;
+
+heading.appendChild(headingText);
+heading.classList.add("blue");
+
+result.appendChild(heading);
+
+console.log(result.children);
