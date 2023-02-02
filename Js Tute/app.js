@@ -1234,7 +1234,7 @@
 // const links = document.querySelectorAll(".first");
 // console.log(links);
 
-// 57_classList and className
+//----- 57_classList and className
 // classList
 // className
 
@@ -1262,7 +1262,7 @@
 // const classValue = third.classList;
 // console.log(classValue);
 
-// 58_createElement, createTextNode, apend child
+//----- 58_createElement, createTextNode, apend child
 // createElement('element')
 // CreateTextNode('text content')
 // element.apendChild(childElement)
@@ -1288,7 +1288,7 @@
 
 // console.log(result.children);
 
-//58_ insert before ('element', 'location');
+//----- 58_ insert before ('element', 'location');
 
 // const result = document.querySelector("#result");
 // const first = document.querySelector(".red");
@@ -1311,7 +1311,7 @@
 // result.insertBefore(heading, first);
 // console.log(result.children);
 
-// 58_replacechild
+// ---- 58_replacechild
 // replaceChild('new' ,'old');
 // const result = document.querySelector("#result");
 // const first = document.querySelector(".red");
@@ -1341,6 +1341,53 @@
 
 // console.log(result.children);
 
-// 59_prepend method and innertext property
+//----- 59_prepend method and innertext property
 // prepend
 // innerText
+
+// const heading = document.createElement("h2");
+// heading.innerText = `I am a dynamic Heading`;
+// document.body.prepend(heading);
+
+// ---- 60_remove and removechild method
+// remove
+// removeChild
+
+// const result = document.querySelector("#result");
+// // result.remove();
+
+// const heading = result.querySelector("h1");
+// result.removeChild(heading);
+// console.log(heading);
+
+// ------61_innerhtml and text content
+
+// const list = document.getElementById("first");
+// const div = document.getElementById("second");
+// const item = document.querySelector(".item");
+
+// console.log(div.textContent);
+// console.log(list.innerHTML);
+// console.log(list.textContent);
+// const random = "random value";
+
+// const ul = document.createElement("ul");
+// ul.innerHTML = `<li class="item">${random}</li>
+//       <li>list item</li>
+//       <li>list item</li>
+//       <li>list item</li>`;
+// document.body.appendChild(ul);
+// div.textContent = "hello world";
+// div.innerHTML = "hey brother";
+
+//---- 62_css style property
+// css
+
+const random = document.querySelector(".random");
+random.style.backgroundColor = "blue";
+random.style.color = "white";
+random.style.fontSize = "3rem";
+random.style.textTransform = "uppercase";
+
+console.log(random);
+// console.log(random.style);
