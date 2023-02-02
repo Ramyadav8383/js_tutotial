@@ -1470,3 +1470,47 @@
 // event.currentTarget
 // this keyword
 // preventDefault() - prevents default behaviour
+
+// const heading = document.querySelector("h1");
+// const btn = document.querySelector(".btn");
+// const link = document.getElementById("link");
+
+// heading.addEventListener("click", function (event) {
+//   console.log(event.currentTarget);
+//   console.log(this);
+// });
+// btn.addEventListener("click", function (event) {
+//   // console.log(event.currentTarget);
+//   event.currentTarget.classList.add("blue");
+//   console.log(event.type);
+// });
+
+// function someFunc(e) {
+//   e.preventDefault();
+// }
+// link.addEventListener("click", someFunc);
+
+// heading.addEventListener("click", function () {
+//   heading.classList.add("blue");
+// });
+
+// 68_ currenttarget and target
+// currentTarget - always refers to the element to which the event handler has been attached to
+// target - identifies the element on which the event occured
+
+// const btn = document.querySelectorAll(".btn");
+
+// btn.forEach(function (btn) {
+//   btn.addEventListener("click", function (e) {
+//     // console.log(e.currentTarget);
+//     // e.currentTarget.style.color = "green";
+//     console.log("target", e.target);
+//     e.target.style.color = "green";
+//   });
+// });
+
+// 69_event propagation, bubbling and capturing
+// allows to select dynamic elements
+// event propagation- order the events are fired
+// event bubbling - clicked element first then bubbles up-- default
+// event capturing - fires at the root and fires until reaches target

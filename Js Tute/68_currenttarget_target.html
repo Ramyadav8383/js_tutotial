@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>currentTarget and target</title>
+    <style>
+      .btn {
+        background-color: red;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">first button</button>
+    <button class="btn">
+      second <strong>button <strong>more nested</strong></strong>
+    </button>
+    <button class="btn">third button</button>
+    <!-- js -->
+    <script src="app.js"></script>
+  </body>
+</html>
