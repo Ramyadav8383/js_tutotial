@@ -1383,11 +1383,67 @@
 //---- 62_css style property
 // css
 
-const random = document.querySelector(".random");
-random.style.backgroundColor = "blue";
-random.style.color = "white";
-random.style.fontSize = "3rem";
-random.style.textTransform = "uppercase";
+// const random = document.querySelector(".random");
+// // random.style.backgroundColor = "blue";
+// // random.style.color = "white";
+// // random.style.fontSize = "3rem";
+// // random.style.textTransform = "capitalize";
+// random.classList.add("title");
 
-console.log(random);
-// console.log(random.style);
+// console.log(random);
+// // console.log(random.style);
+
+// ----63_events overview
+
+// ---- 64_ click event
+
+// select element
+// addEventListner()
+// what event, what  to do
+
+// const btn = document.querySelector(".btn");
+// const heading = document.querySelector("h2");
+
+// function changeColors() {
+//   let hasClass = heading.classList.contains(".red");
+//   if (hasClass) {
+//     heading.classList.remove(".red");
+//   } else {
+//     heading.classList.add(".red");
+//   }
+// }
+
+// btn.addEventListener("click", changeColors);
+
+// 65_ mouse events
+// click - fires after full action occurs
+// mousedown - button is pressed
+// mouseup - button is released
+// mouseenter - moved onto an element
+// mouseleave - moved out of an element
+
+// const heading = document.querySelector("h1");
+// const btn = document.querySelector(".btn");
+
+// btn.addEventListener("click", function () {
+//   console.log("you clicked me");
+// });
+// btn.addEventListener("mousedown", function () {
+//   console.log("down");
+// });
+// btn.addEventListener("mouseup", function () {
+//   console.log("up");
+// });
+
+// heading.addEventListener("mouseenter", function () {
+//   heading.classList.add("blue");
+// });
+// heading.addEventListener("mouseleave", function () {
+//   heading.classList.remove("blue");
+// });
+
+// 66_ key events in js
+
+// keypress - when key is pressed
+// keydown - when key is down
+// keyup - when key is released
