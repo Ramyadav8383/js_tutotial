@@ -1267,23 +1267,80 @@
 // CreateTextNode('text content')
 // element.apendChild(childElement)
 
-const result = document.querySelector("#result");
+// const result = document.querySelector("#result");
 
-// create empty element
-const bodyDiv = document.createElement("div");
+// // create empty element
+// const bodyDiv = document.createElement("div");
 
-// create text node
-const text = document.createTextNode("a simple body div");
-bodyDiv.appendChild(text);
-document.body.appendChild(bodyDiv);
+// // create text node
+// const text = document.createTextNode("a simple body div");
+// bodyDiv.appendChild(text);
+// document.body.appendChild(bodyDiv);
 
-const heading = document.createElement("h2");
-const headingText = document.createTextNode("dynamic heading");
-heading;
+// const heading = document.createElement("h2");
+// const headingText = document.createTextNode("dynamic heading");
+// // heading;
 
-heading.appendChild(headingText);
-heading.classList.add("blue");
+// heading.appendChild(headingText);
+// heading.classList.add("blue");
 
-result.appendChild(heading);
+// result.appendChild(heading);
 
-console.log(result.children);
+// console.log(result.children);
+
+//58_ insert before ('element', 'location');
+
+// const result = document.querySelector("#result");
+// const first = document.querySelector(".red");
+
+// // create empty element
+// const bodyDiv = document.createElement("div");
+
+// // create text node
+// const text = document.createTextNode("a simple body div");
+// bodyDiv.appendChild(text);
+// document.body.insertBefore(bodyDiv, result);
+// // result element
+
+// const heading = document.createElement("h2");
+// const headingText = document.createTextNode("dynamic heading");
+// // heading;
+
+// heading.appendChild(headingText);
+// heading.classList.add("blue");
+// result.insertBefore(heading, first);
+// console.log(result.children);
+
+// 58_replacechild
+// replaceChild('new' ,'old');
+// const result = document.querySelector("#result");
+// const first = document.querySelector(".red");
+
+// // create empty element
+// const bodyDiv = document.createElement("div");
+
+// // create text node
+// const text = document.createTextNode("a simple body div");
+// bodyDiv.appendChild(text);
+// document.body.insertBefore(bodyDiv, result);
+// // result element
+
+// const heading = document.createElement("h2");
+// const headingText = document.createTextNode("dynamic heading");
+// // heading;
+
+// heading.appendChild(headingText);
+// heading.classList.add("blue");
+// result.insertBefore(heading, first);
+
+// const smallHeading = document.createElement("h6");
+// const smallText = document.createTextNode(`i am A smaller text`);
+// smallHeading.classList.add(".red");
+// smallHeading.appendChild(smallText);
+// document.body.replaceChild(smallHeading, bodyDiv);
+
+// console.log(result.children);
+
+// 59_prepend method and innertext property
+// prepend
+// innerText
