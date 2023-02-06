@@ -40,6 +40,8 @@ let month = futureDate.getMonth();
 month = months[month];
 giveaway.textContent = `giveaway ends on ${weekday} ${date} ${month} ${year} ${hours}:${minutes}pm`;
 
+//forEach() calls a function for each element in an array
+
 // give dynamic value for countdown timmer
 
 const futureTime = futureDate.getTime();
